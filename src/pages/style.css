@@ -5,12 +5,12 @@
     font-family: 'Work Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-nav{
-    background: linear-gradient(rgba(0,0,0,0.7), transparent);
+nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
     position: fixed;
     top: 0;
     right: 0;
@@ -53,6 +53,10 @@ body {
     backdrop-filter: blur(25px);
 }
 
+p {
+    color: beige;
+}
+
 section {
     min-height: 100vh;
     width: 100%;
@@ -65,28 +69,60 @@ section {
     padding-left: 100px;
 }
 
-#sessao2 article{
+#sessao2 article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#sessao2 {
     display: flex;
 }
 
-#sessao2 article div{
+#sessao2 article div {
     text-align: center;
+    width: 400px;
     margin: 30px;
     padding: 15px;
 }
 
-#sessao2 img{
-    width: 50%;
-    height: 80%;
+#sessao2 img {
+    height: 300px;
 }
 
+#sessao2, #sessao3{
+    font-size: 1.3rem;
+}
 
+#sessao3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+#sessao3 article div p {
+    width: 70%;
+    padding: 10%;
+}
 
+#sessao3 article div {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+}
 
+#sessao3 img {
+    border-radius: 25%;
+    margin: 20px;
+    border: 1px solid black;
+}
 
-
-
+#sessao3 article div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
 
 
 
