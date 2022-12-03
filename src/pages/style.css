@@ -91,7 +91,8 @@ section {
     height: 300px;
 }
 
-#sessao2, #sessao3{
+#sessao2,
+#sessao3 {
     font-size: 1.3rem;
 }
 
@@ -103,14 +104,14 @@ section {
 }
 
 #sessao3 article div p {
-    width: 70%;
-    padding: 10%;
+    width: 90%;
+    padding: 5%;
 }
 
 #sessao3 article div {
     display: flex;
     flex-direction: row;
-    width: 75vw;
+    width: 80vw;
 }
 
 #sessao3 img {
@@ -151,5 +152,28 @@ h1 {
 
 .subtitle {
     font-style: italic;
-    font-weight: 100;
+    font-weight: 200;
+}
+
+.subtitle a {
+    text-decoration: none;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6 {
+    margin: 5%;
+    width: 5%;
+}
+
+.tecs {
+    border: 1px solid red;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
