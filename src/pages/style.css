@@ -125,14 +125,6 @@ section {
     border-radius: 20px;
 }
 
-
-
-
-
-
-
-
-
 .div_principal {
     color: lightblue;
     font-size: 3rem;
@@ -153,10 +145,12 @@ h1 {
 .subtitle {
     font-style: italic;
     font-weight: 200;
+    text-decoration: none;
+    color: cyan;
 }
 
-.subtitle a {
-    text-decoration: none;
+.subtitle:hover {
+    border-bottom: 1px solid cyan;
 }
 
 #img1,
