@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid red;
 }
 
 html {
@@ -74,17 +75,21 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-
-#sessao2 {
-    display: flex;
+    height: 100%;
 }
 
 #sessao2 article div {
     text-align: center;
     width: 400px;
-    margin: 30px;
+    height: 100%;
+    margin: 20px;
     padding: 15px;
+    
+}
+
+#sessao2 article:nth-child(2) div div{
+    width: auto;
+    
 }
 
 #sessao2 img {
