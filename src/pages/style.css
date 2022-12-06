@@ -75,12 +75,124 @@ h1 {
     font-size: 0.5em;
 }
 
-.subtitle {
-    font-style: italic;
+span.cyberpunk {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
     font-weight: 200;
-    text-decoration: none;
+    font-style: italic;
+    position: relative;
+    padding-bottom: 15px;
     color: #f9f002;
 }
+
+span.cyberpunk:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 2px;
+    width: 100%;
+    height: 10px;
+    background-color: #f9f002;
+    clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+}
+
+span.cyberpunk.glitched {
+    animation-name: h1glitched;
+    animation-duration: calc(var(--glitched-duration) * 1.4);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes h1glitched {
+    0% {
+        transform: skew(-20deg);
+        left: -4px;
+    }
+
+    10% {
+        transform: skew(-20deg);
+        left: -4px;
+    }
+
+    11% {
+        transform: skew(0deg);
+        left: 2px;
+    }
+
+    50% {
+        transform: skew(0deg);
+    }
+
+    51% {
+        transform: skew(10deg);
+    }
+
+    59% {
+        transform: skew(10deg);
+    }
+
+    60% {
+        transform: skew(0deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+span.cyberpunk.glitched:before {
+    animation-name: h1beforeglitched;
+    animation-duration: calc(var(--glitched-duration) * 2);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes h1beforeglitched {
+    0% {
+        transform: skew(-20deg);
+        left: -4px;
+        clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+
+    10% {
+        transform: skew(-20deg);
+        left: -4px;
+        clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+
+    11% {
+        transform: skew(0deg);
+        left: 2px;
+        clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+
+    50% {
+        transform: skew(0deg);
+        clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+
+    51% {
+        transform: skew(0deg);
+        clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 40% 5px, calc(40% - 30px) 0px, calc(40% + 30px) 0px, calc(45% - 15px) 5px, 100% 5px, 100% 6px, calc(45% - 14px) 6px, calc(40% + 29px) 1px, calc(40% - 29px) 1px, calc(40% + 1px) 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+
+    59% {
+        transform: skew(0deg);
+        clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 40% 5px, calc(40% - 30px) 0px, calc(40% + 30px) 0px, calc(45% - 15px) 5px, 100% 5px, 100% 6px, calc(45% - 14px) 6px, calc(40% + 29px) 1px, calc(40% - 29px) 1px, calc(40% + 1px) 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+
+    60% {
+        transform: skew(0deg);
+        clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+
+    100% {
+        transform: skew(0deg);
+        clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+}
+
 
 p {
     color: beige;
