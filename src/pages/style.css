@@ -14,13 +14,6 @@ html {
     position: fixed;
     height: 90px;
     width: 100%;
-    z-index: 1;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 ul {
@@ -617,7 +610,8 @@ body .cybr-btn+.cybr-btn {
     position: relative;
     font-weight: 700;
     border: 0;
-    min-width: 300px;
+    min-width: 200px;
+    max-width: 250px;
     height: 75px;
     line-height: 75px;
     transition: background 0.2s;
@@ -661,10 +655,23 @@ body .cybr-btn+.cybr-btn {
 
 }
 
-.cybr-btn img {
+.sup_contact .cybr-btn img {
     transform: scale(0.7);
     height: 90%;
     max-height: max-content;
+}
+
+.bot_contact .cybr-btn img{
+    transform: scale(4);
+    /* background-color: white;
+    border-radius: 20%; */
+}
+
+.bot_contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
 }
 
 .cybr-btn:hover {
