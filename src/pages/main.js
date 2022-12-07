@@ -28,6 +28,6 @@ function linkButtongit(){
     window.open('https://github.com/Bruskyy', '_blank')
 }
 
-function linkButtonem(){
-    
+function subtitleButton() {
+    window.open('https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/a-traducao-de-per-aspera-ad-astra/14360', '_blank')
 }
