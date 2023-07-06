@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!--fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;400;500&display=swap" rel="stylesheet">
+    <!--fonte-->
+    <!--icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!--icones-->
+    <title>Vitor Bruschi</title>
+</head>
+
+<body id="bodyHome">
+
+    <header>
+
+        <img src="./assets/menu.png" id="hamburger" onclick="openMenu()" />
+
+        <div id="container">
+            <div id="close" onclick="closeMenu()">➕</div>
+            <ul id="menu">
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./projetos.html">Projetos</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+
+            </ul>
+
+            <div id="social">
+                <i onclick="GitHub()" class="fa fa-github" aria-hidden="true"></i>
+                <i onclick="WhatsApp()" class="fa fa-whatsapp" aria-hidden="true"></i>
+                <i onclick="Linkedin()" class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <main id="main">
+
+
+        <section id="section1">
+            <div class="nome">
+                <h1>Vitor <span>Bruschi</span></h1>
+                <p>Full-Stack Web Dev | <span class="cybr-btn" onclick="astra()">Per Aspera Ad Astra<span
+                            class="cybr-btn__glitch">Clique</span></span></p>
+                <div class="homesocial">
+                    <i onclick="GitHub()" class="fa fa-github" aria-hidden="true"></i>
+                    <i onclick="WhatsApp()" class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <i onclick="Linkedin()" class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="containerTec">
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                <i class="devicon-react-original colored"></i>
+                <i class="devicon-mongodb-plain-wordmark colored"></i>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/f74e8e8864.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>

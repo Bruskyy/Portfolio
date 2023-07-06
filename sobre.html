@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+
+    <!--fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;400;500&display=swap" rel="stylesheet">
+    <!--fonte-->
+    <!--icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!--icones-->
+    <title>Vitor Bruschi</title>
+</head>
+
+<body id="bodysobre">
+
+    <header>
+
+        <img src="./assets/menu.png" id="hamburger" onclick="Reset()" />
+
+        <div id="container">
+            <div id="close" onclick="closeMenu()">➕</div>
+            <ul id="menu">
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./projetos.html">Projetos</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+
+            </ul>
+
+            <div id="social">
+                <i onclick="GitHub()" class="devicon-github-original"></i>
+                <img src="./assets/whats.png" onclick="WhatsApp()" />
+                <i onclick="Linkedin()" class="devicon-linkedin-plain colored"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <main id="mainSobre">
+
+        <h1>Sobre</h1>
+        <section id="containerSobre">
+            <img src="./assets/eu.jpeg" id="avatar" />
+
+            <p class="sobre">Meu nome é Vitor, tenho 22 anos e sou Desenvolvedor de Software. Tenho conhecimento em
+                HTML, CSS, JavaScript, React, Node e SQL. Ultimamente estou desenvolvendo minhas habilidades em
+                arquitetura MVC para C# .Net, onde pretendo me especializar em back-end WEB e quem sabe futuramente um
+                Dev Mobile. <b>Estou a procura da minha primeira oportunidade como desenvolvedor para mostrar o meu
+                    verdadeiro potencial.</b></p>
+
+            <div id="containerSquares">
+
+                <div>
+                    <lord-icon src="https://cdn.lordicon.com/kipaqhoz.json" trigger="loop" colors="primary:#f2ff00"
+                        delay="5000" state="hover" style="width:50px;height:50px" id="bookicon">
+                    </lord-icon>
+                    <p>ETEC - Desenvolvimento de Software</p>
+                    <p>IMPACTA - Análise e Desenvolvimento de Sistemas</p>
+                    <p>Udemy - Desenvolvimento Web</p>
+                    <p>Udemy - Desenvolvimento Back-End</p>
+                </div>
+
+                <div>
+                    <lord-icon src="https://cdn.lordicon.com/winbdcbm.json" trigger="loop" colors="primary:#f2ff00"
+                        delay="5000" state="hover" style="width:50px;height:50px" id="workicon">
+                    </lord-icon>
+                    <p>Nubank - Analista de Qualidade</p>
+                    <p>Samsung - Analista Técnico</p>
+                    <p>IOS - Instrutor de Programação</p>
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align: center;">
+            <img src="./assets/imgcv.png" style="width: 50px;">
+            <br />
+            <input type="button" style="width: 100px;" value="Baixar Currículo" onclick="BaixarCV()">
+            </input>
+        </div>
+    </main>
+
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
