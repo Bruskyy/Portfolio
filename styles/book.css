@@ -20,7 +20,7 @@
 body {
     height: 100vh;
     place-items: center;
-    background: black;
+    background: black url('../wallpaper1.jpg');
     backdrop-filter: blur(20px);
     overflow: hidden;
 }
