@@ -57,3 +57,7 @@ function Reset() {
 function BaixarCV() {
     window.location.href = './assets/CV/Vitor Bruschi Currículo Fullstack.pdf'
 }
+
+function Projeto1(){
+    window.open('https://www.mktabacaria.com.br')
+}

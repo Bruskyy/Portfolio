@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Changa', sans-serif
+    font-family: 'Changa', sans-serif;
 }
 
 #container {
@@ -109,7 +109,7 @@ header a {
 
 body {
     background: #000 url(../wallpaper1.jpg);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(50px);
     height: 100%
 }
 
@@ -261,6 +261,15 @@ i {
     margin: 40px 0;
     width: 200px;
     height: 200px
+}
+
+#containerProjetos p{
+    text-align: center;
+}
+
+.PrimeiroProjeto img{
+    transform: scaleX(2);
+    cursor: pointer;
 }
 
 @media (min-height: 800px) {
