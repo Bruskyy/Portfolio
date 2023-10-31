@@ -17,7 +17,7 @@
     transition: all .6s ease;
     z-index: 999;
     -webkit-backdrop-filter: blur();
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     overflow: hidden
 }
 
@@ -109,7 +109,7 @@ header a {
 
 body {
     background: #000 url(../wallpaper1.jpg);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(20px);
     height: 100%
 }
 
@@ -187,13 +187,17 @@ body {
     font-size: 80px
 }
 
-i:hover {
+i:hover, #tux:hover {
     transform: scale(1.5);
     transition: 1s;
 }
 
-i {
+i, #tux {
     transition: 1s;
+}
+
+#tux{
+    transform: scale(0.8);
 }
 
 .homesocial i{
@@ -291,7 +295,7 @@ i {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 #avatar {
@@ -319,7 +323,7 @@ i {
 
 .sobre {
     margin: 20px;
-    padding: 10px;
+    padding: 30px;
     height: 300px;
     width: 900px;
     font-size: 1.7rem;
@@ -327,7 +331,7 @@ i {
     border-radius: 10px;
     font-weight: 100;
     word-break: keep-all;
-    line-break: loose;
+    line-break: strict;
     overflow: auto
 }
 
@@ -337,12 +341,12 @@ i {
     border-radius: 10px;
     padding: 40px;
     text-align: center;
-    margin: 20px 0 40px
+    margin: 20px 0 40px;
 }
 
 #containerSquares div {
     width: 300px;
-    height: 300px
+    height: 400px;
 }
 
 #containerSquares div p {
